@@ -1,0 +1,16 @@
+{
+  "name": "cs-tools",
+  "version": "1.0.0",
+  "description": "A set of tools useful to CS",
+  "main": "index.js",
+  "repository": "git@github.com:cesosag/cs-tools.git",
+  "author": "Carlos Sosa <cesosag@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "engines": {
+		"node": ">=14.16"
+	},
+  "workspaces": [
+		"packages/*"
+	]
+}
