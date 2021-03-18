@@ -12,5 +12,8 @@
 	},
   "workspaces": [
 		"packages/*"
-	]
+	],
+  "scripts": {
+		"lint": "yarn workspaces run lint"
+	}
 }

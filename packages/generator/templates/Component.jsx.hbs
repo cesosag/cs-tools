@@ -1,0 +1,30 @@
+import { useState } from 'react'
+import PropTypes from 'prop-types'
+import cx from 'classnames'
+import { Title, Input, ToggleButton } from './{{properCase name}}.styles'
+
+const {{ properCase name }} = ({ className, title }) => {
+	const [on, setOn] = useState(false)
+
+	const toggle = () => setOn(!on)
+
+	return (
+		<>
+			<Title className={cx(className, 'custom-class')}>{title}</Title>
+			<Input type="checkbox" />
+			<ToggleButton on={on} aria-expanded={on} onClick={toggle} />
+		</>
+	)
+}
+
+{{ properCase name }}.propTypes = {
+	className: PropTypes.string,
+	title: PropTypes.string,
+}
+
+{{ properCase name }}.defaultProps = {
+	className: null,
+	title: '',
+}
+
+export default {{ properCase name }}
