@@ -1,9 +1,13 @@
-import { useState } from 'react'
-import PropTypes from 'prop-types'
+import { FC, useState } from 'react'
 import cx from 'classnames'
 import { Title, Input, ToggleButton } from './{{properCase name}}.styles'
 
-const {{ properCase name }} = ({ className, title }) => {
+export type {{ properCase name }}Props = {
+	className?: string;
+	title: string;
+}
+
+export const {{ properCase name }}: FC<{{ properCase name }}Props> = ({ className, title }) => {
 	const [on, setOn] = useState(false)
 
 	const toggle = () => setOn(!on)
@@ -16,15 +20,3 @@ const {{ properCase name }} = ({ className, title }) => {
 		</>
 	)
 }
-
-{{ properCase name }}.propTypes = {
-	className: PropTypes.string,
-	title: PropTypes.string,
-}
-
-{{ properCase name }}.defaultProps = {
-	className: null,
-	title: '',
-}
-
-export default {{ properCase name }}

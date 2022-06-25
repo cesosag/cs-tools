@@ -1,6 +1,6 @@
 # Generate
 
-This package allows to easily create components for React projects that use `styled-components` library.
+This package allows to easily create components for React projects (with either JavaScript or TypeScript) that use `styled-components` library.
 
 ## Usage
 
@@ -8,6 +8,6 @@ This package allows to easily create components for React projects that use `sty
 
 2. Add `"generate": "generate"` to the scripts in `package.json`.
 
-3. Run `yarn generate` and follow the propmt questions.
+3. Run `yarn generate` and follow the prompt questions.
 
 You can make sure this module lints with itself using `yarn lint`.

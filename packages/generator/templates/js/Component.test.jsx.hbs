@@ -1,0 +1,11 @@
+import { render, screen } from '@testing-library/react';
+import { {{ properCase name }} } from './{{ properCase name }}';
+import { mockData } from './data.mock';
+
+describe('<{{ properCase name }} />', () => {
+  it('should render', () => {
+    render(<{{ properCase name }} {...mockData} />);
+    const title = screen.getByText(mockData.title);
+    expect(title).toBeInTheDocument();
+  });
+});

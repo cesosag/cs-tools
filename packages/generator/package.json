@@ -1,6 +1,6 @@
 {
   "name": "@csjs/generate",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A CLI generator for react projects and styled-components",
   "main": "index.js",
 	"type": "module",
@@ -25,7 +25,7 @@
     "plop": "3.1.1"
   },
   "devDependencies": {
-    "@csjs/eslint-config-cs": "0.0.2",
+    "@csjs/eslint-config-cs": "0.0.3",
     "eslint": "8.18.0"
   },
   "peerDependencies": {
