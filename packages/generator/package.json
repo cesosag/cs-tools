@@ -1,11 +1,11 @@
 {
   "name": "@csjs/generate",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A CLI generator for react projects and styled-components",
   "main": "index.js",
+	"type": "module",
   "author": "Carlos Sosa <cesosag@gmail.com>",
   "license": "MIT",
-  "private": true,
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/cesosag/cs-tools.git"
@@ -21,18 +21,18 @@
     "generate": "./index.js"
   },
   "dependencies": {
-    "minimist": "^1.2.5",
-    "plop": "^2.7.4"
+    "minimist": "1.2.6",
+    "plop": "3.1.1"
   },
   "devDependencies": {
-    "@csjs/eslint-config-cs": "^0.0.2",
-    "eslint": "^7.22.0"
+    "@csjs/eslint-config-cs": "0.0.2",
+    "eslint": "8.18.0"
   },
   "peerDependencies": {
 		"classnames": "^2.2.6",
-    "prop-types": "^15.7.2",
-    "react": "^17.0.1",
-    "styled-components": "^5.2.1"
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "styled-components": "^5.3.5"
   },
   "scripts": {
     "lint": "eslint . --fix",

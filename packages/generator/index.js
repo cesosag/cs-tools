@@ -1,19 +1,27 @@
 #!/usr/bin/env node
-const path = require('path')
+import path from 'path'
+import { Plop, run } from 'plop'
+import minimist from 'minimist'
+import { fileURLToPath } from 'url'
+
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = path.dirname(__filename)
 
 const args = process.argv.slice(2)
-const { Plop, run } = require('plop')
-const argv = require('minimist')(args)
+const argv = minimist(args)
 
-Plop.launch({
-	cwd: argv.cwd,
-	configPath: path.join(__dirname, 'plopfile.js'),
-	require: argv.require,
-	completion: argv.completion,
-}, (env) => {
-	const options = {
-		...env,
-		dest: process.cwd(),
+Plop.prepare(
+	{
+		cwd: argv.cwd,
+		configPath: path.join(__dirname, "plopfile.js"),
+		preload: argv.preload || [],
+		completion: argv.completion,
+	},
+	(env) => {
+		const options = {
+			...env,
+			dest: process.cwd(),
+		};
+		return run(options, undefined, true);
 	}
-	return run(options, undefined, true)
-})
+);

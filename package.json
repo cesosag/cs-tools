@@ -7,13 +7,18 @@
   "author": "Carlos Sosa <cesosag@gmail.com>",
   "license": "MIT",
   "private": true,
-  "engines": {
-		"node": ">=14.16"
-	},
   "workspaces": [
 		"packages/*"
 	],
   "scripts": {
 		"lint": "yarn workspaces run lint"
+	},
+	"engines": {
+		"node": "16.15.1",
+		"yarn": "1.22.19"
+	},
+	"volta": {
+		"node": "16.15.1",
+		"yarn": "1.22.19"
 	}
 }

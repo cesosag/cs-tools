@@ -1,10 +1,9 @@
 module.exports = {
-	extends: [
-		'plugin:node/recommended',
-		'airbnb',
-		'airbnb/hooks',
-	],
-	parser: 'babel-eslint',
+	extends: ['plugin:node/recommended', 'airbnb', 'airbnb/hooks'],
+	parser: '@babel/eslint-parser',
+	parserOptions: {
+		requireConfigFile: false,
+	},
 	root: true,
 	rules: {
 		'arrow-body-style': ['warn', 'as-needed'],
@@ -14,7 +13,10 @@ module.exports = {
 		'no-tabs': ['error', { allowIndentationTabs: true }],
 		'no-unused-vars': ['warn'],
 		'node/no-unsupported-features/es-syntax': ['off'],
-		'node/no-missing-import': ['error', { tryExtensions: ['.js', '.jsx', '.json'] }],
+		'node/no-missing-import': [
+			'error',
+			{ tryExtensions: ['.js', '.jsx', '.json'] },
+		],
 		'object-curly-newline': ['off'],
 		'react/jsx-indent': ['error', 'tab'],
 		'react/jsx-props-no-spreading': ['off'],
