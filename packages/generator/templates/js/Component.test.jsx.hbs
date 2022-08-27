@@ -5,7 +5,7 @@ import { mockData } from './data.mock'
 describe('<{{ properCase name }} />', () => {
   it('should render', () => {
     render(<{{ properCase name }} {...mockData} />)
-    const title = screen.getByText(mockData.title)
+    const title = screen.getByRole('heading', { level: 1, name: mockData.title })
     expect(title).toBeInTheDocument()
   })
 })

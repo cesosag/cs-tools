@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import PropTypes from 'prop-types'
-import cx from 'classnames'
 import { Title, Input, ToggleButton } from './{{properCase name}}.styles'
 
 export const {{ properCase name }} = ({ className, title }) => {
@@ -10,7 +9,7 @@ export const {{ properCase name }} = ({ className, title }) => {
 
 	return (
 		<>
-			<Title className={cx(className, 'custom-class')}>{title}</Title>
+			<Title className={className}>{title}</Title>
 			<Input type="checkbox" />
 			<ToggleButton on={on} aria-expanded={on} onClick={toggle} />
 		</>
