@@ -1,6 +1,6 @@
 {
   "name": "@csjs/eslint-config-cs",
-  "version": "0.0.31",
+  "version": "0.0.32",
   "description": "Custom rules for ESLint",
   "main": "index.js",
   "scripts": {
@@ -21,15 +21,15 @@
     "access": "public"
   },
   "dependencies": {
-		"@babel/eslint-parser": "7.18.9",
+    "@babel/eslint-parser": "7.24.8",
     "eslint-config-airbnb": "19.0.4",
-    "eslint-plugin-import": "2.26.0",
-    "eslint-plugin-jsx-a11y": "6.6.1",
+    "eslint-plugin-import": "2.29.1",
+    "eslint-plugin-jsx-a11y": "6.9.0",
     "eslint-plugin-node": "11.1.0",
-    "eslint-plugin-react": "7.31.1",
-    "eslint-plugin-react-hooks": "4.6.0"
+    "eslint-plugin-react": "7.35.0",
+    "eslint-plugin-react-hooks": "4.6.2"
   },
   "peerDependencies": {
-    "eslint": "^8.18.0"
+    "eslint": "^9.7.0"
   }
 }

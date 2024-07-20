@@ -8,17 +8,17 @@
   "license": "MIT",
   "private": true,
   "workspaces": [
-		"packages/*"
-	],
+    "packages/*"
+  ],
   "scripts": {
-		"lint": "yarn workspaces run lint"
-	},
-	"engines": {
-		"node": "16.15.1",
-		"yarn": "1.22.19"
-	},
-	"volta": {
-		"node": "16.15.1",
-		"yarn": "1.22.19"
-	}
+    "lint": "yarn workspaces run lint"
+  },
+  "engines": {
+    "node": "20.15.1",
+    "yarn": "4.3.1"
+  },
+  "volta": {
+    "node": "20.15.1",
+    "yarn": "4.3.1"
+  }
 }
